@@ -1,0 +1,71 @@
+@import 'fonts.scss';
+@import 'universals.scss';
+@import 'variables.scss';
+
+.header {
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+        
+       li{
+        &:hover{
+            color:$color-black;
+        }
+       }
+        
+    }
+    
+    &__logo{
+     display: flex;
+     gap: 50px;
+     align-items: center;
+     ul{
+        display: flex;
+        list-style:none;
+        gap: 40px;
+     }
+     select{
+        border: none;
+        background-color: transparent;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+     }
+    }
+
+    &__login{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__btnLogin{
+        border: none;
+        background-color: transparent;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+
+        &:hover{
+            color:$color-black;}
+    }
+
+    &__btnRegister{
+        border: 2px solid $color-black;
+        border-radius: 15px;
+        padding: 10px 20px 10px 20px;
+        background-color: transparent;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+
+        &:hover{
+            color:$color-black;}
+    }
+} 
