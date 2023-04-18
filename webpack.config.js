@@ -27,7 +27,12 @@ module : {
         {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        }
+        },
+        {
+            test: /\.html$/,
+            use: ['html-loader'],
+          },
+        
     ]
 },
 plugins: [

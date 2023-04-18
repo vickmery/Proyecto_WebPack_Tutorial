@@ -1,0 +1,133 @@
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css ***!
+  \****************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap);
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css (1) ***!
+  \********************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap);
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css (2) ***!
+  \********************************************************************************/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.header__nav li:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header__logo {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header__logo ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.header__logo select {
+  border: none;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.header__login {
+  display: flex;
+  gap: 40px;
+}
+.header__btnLogin {
+  border: none;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.header__btnLogin:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header__btnRegister {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.header__btnRegister:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.main {
+  display: flex;
+  padding: 180px;
+}
+.main__about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__about h1 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 800px;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.main__about span {
+  display: block;
+}
+.main__person img {
+  width: 450px;
+  height: auto;
+}
+.main__text {
+  width: 79%;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  color: hsl(0, 0%, 41%);
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.main__btn {
+  border: 2px solid hsl(0, 0%, 8%);
+  border-radius: 15px;
+  padding: 15px 25px 15px 25px;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 98%);
+  font-size: 16px;
+  width: 27%;
+}
+.main__btn:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
+}
+.main__companies ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-content: center;
+  align-items: center;
+  margin-top: 13.3%;
+}
+.main__companies ul img {
+  width: 80px;
+  height: auto;
+}
+
