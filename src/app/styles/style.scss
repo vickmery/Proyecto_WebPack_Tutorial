@@ -57,7 +57,7 @@
     }
 
     &__btnRegister{
-        border: 2px solid $color-black;
+        border: 2px solid $color-gray;
         border-radius: 15px;
         padding: 10px 20px 10px 20px;
         background-color: transparent;
@@ -66,6 +66,77 @@
         font-size: $font-size-nav;
 
         &:hover{
-            color:$color-black;}
+            color:$color-black;
+            border: 2px solid $color-black;
+        }
     }
 } 
+    .main{ 
+    display:flex;
+    padding: 40px 100px 40px 100px ;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+    
+    &__about {
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h1 {
+            font-family: $font;
+            font-weight: 800px;
+            font-size: 64px;
+            margin-bottom: 30px;
+            } 
+            
+            span  {
+        display: block;
+
+             } 
+    }
+     &__person{
+        img {
+        width: 450px;
+        height: auto;    
+        }
+     }
+     &__text {
+        width: 79%;
+        font-family: $font;
+        font-size: $font-size-nav;
+        color:$color-gray;
+        line-height: 25px;
+        margin-bottom: 30px;
+   }
+   &__btn{
+    border: 2px solid $color-black;
+    border-radius: 15px;
+    padding: 15px 25px 15px 25px;
+    background-color: $color-black ;
+    font-family: $font;
+    color: $color-white;
+    font-size: $font-size-nav;
+    width: 27%;
+    &:hover{
+        color:$color-black;
+    background-color: $color-white;
+    }
+}
+&__companies {
+
+ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        align-content: center;
+        align-items: center;
+        margin-top: 13.3%;
+        img {
+            width: 80px;
+            height: auto;
+        }
+    }
+
+}
+}

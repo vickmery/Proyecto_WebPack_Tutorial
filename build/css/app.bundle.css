@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css ***!
+  \****************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap);
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css (1) ***!
+  \********************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap);
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app/styles/style.css (2) ***!
+  \********************************************************************************/
 * {
   padding: 0%;
   margin: 0%;
@@ -67,10 +76,7 @@
 
 .main {
   display: flex;
-  padding: 40px 100px 40px 100px;
-  align-items: flex-end;
-  align-content: center;
-  justify-content: center;
+  padding: 180px;
 }
 .main__about {
   display: flex;
@@ -125,4 +131,3 @@
   height: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
