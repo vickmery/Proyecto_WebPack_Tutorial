@@ -37,6 +37,38 @@
   color: hsl(0, 0%, 41%);
   font-size: 16px;
 }
+.header__containerFeatures {
+  position: relative;
+}
+.header__buttonFeatures {
+  border: none;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.header__menuDropdownFeatures {
+  position: absolute;
+  display: none;
+  background-color: hsl(0, 0%, 98%);
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 120px;
+  opacity: 0;
+}
+.header__menuDropdownFeatures:hover {
+  opacity: 1;
+}
+.header__menuDropdownFeatures li:hover {
+  background-color: #007bff;
+}
+.header__menuDropdownFeatures a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+.header__containerFeatures:hover .header__menuDropdownFeatures {
+  display: block;
+}
 .header__login {
   display: flex;
   gap: 40px;
