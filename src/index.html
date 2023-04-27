@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./app/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon-32x32.png">
     <title>Snap</title>
   </head>
   <body>
@@ -12,16 +13,16 @@
       <nav class="header__nav">
         <div class="header__logo">
           <figure>
-            <img src="./imgs/logo.svg" alt="Snap" />
+            <img src="/imgs/logo.svg" alt="Snap" />
           </figure>
           <ul>
             <li>
-              <select name="Features" id="">
-                <option value="" hidden="false">Features</option>
-              </select>
+              <div class="header__containerFeatures">
+                <button class="header__buttonFeatures">Features <img src="../imgs/icon-arrow-down.svg" alt=""></button>
+              </div>
             </li>
             <li>
-              <select name="Company" id="">
+              <select name="Company" id="" class="header__selectCompany">
                 <option value="" hidden="false">Company</option>
               </select>
             </li>
@@ -50,19 +51,19 @@
           <nav>
             <ul>
               <li>
-                <img src="./imgs/client-databiz.svg" alt=""  />
+                <img src="/imgs/client-databiz.svg" alt=""  />
               </li>
 
               <li>
-                <img src="./imgs/client-audiophile.svg" alt=""  />
+                <img src="/imgs/client-audiophile.svg" alt=""  />
               </li>
 
               <li>
-                <img src="./imgs/client-meet.svg" alt=""  />
+                <img src="/imgs/client-meet.svg" alt=""  />
               </li>
 
               <li>
-                <img src="./imgs/client-maker.svg" alt=""  />
+                <img src="/imgs/client-maker.svg" alt=""  />
               </li>
             </ul>
           </nav>
@@ -70,9 +71,9 @@
       </section>
       <section class="main__person">
         <figure class="main__img">
-          <img src="./imgs/image-hero-desktop.png" alt="" />
+          <img src="/imgs/image-hero-desktop.png" alt="" />
           <img
-            src="./imgs/image-hero-desktop.png"
+            src="/imgs/image-hero-desktop.png"
             alt=""
             hidden="false"
           />

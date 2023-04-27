@@ -40,6 +40,49 @@
      }
     }
 
+    &__containerFeatures{
+        position: relative;
+    }
+
+    &__buttonFeatures{
+        border: none;
+        background-color: transparent;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+    }
+
+    &__menuDropdownFeatures{
+        position: absolute;
+        display: none;
+        background-color: $color-white;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        width: 120px;
+        opacity: 0;
+
+        &:hover{
+            opacity: 1;
+        }
+
+        li{
+            
+
+            &:hover{
+                background-color: #007bff;
+            }
+        }
+        
+        a{
+            text-decoration: none;
+            color: $color-gray;
+        }
+    }
+
+    &__containerFeatures:hover &__menuDropdownFeatures{
+        display: block;
+    }
+
     &__login{
         display: flex;
         gap: 40px;

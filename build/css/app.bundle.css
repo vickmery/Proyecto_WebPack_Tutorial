@@ -76,7 +76,10 @@
 
 .main {
   display: flex;
-  padding: 180px;
+  padding: 40px 100px 40px 100px;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: center;
 }
 .main__about {
   display: flex;
