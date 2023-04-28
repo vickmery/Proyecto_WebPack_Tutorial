@@ -3187,7 +3187,27 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/app/styles/style.css?666e\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.html */ \"./src/index.html\");\n\n\n\n//# sourceURL=webpack://babel/./src/app/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/app/styles/style.css?666e\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.html */ \"./src/index.html\");\n/* harmony import */ var _app_print_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../app/print.js */ \"./src/app/print.js\");\n/* harmony import */ var _app_print_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_app_print_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./script.js */ \"./src/app/script.js\");\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_script_js__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack://babel/./src/app/index.js?");
+
+/***/ }),
+
+/***/ "./src/app/print.js":
+/*!**************************!*\
+  !*** ./src/app/print.js ***!
+  \**************************/
+/***/ (() => {
+
+eval("var featuresBtn = document.querySelector(\".header__buttonFeatures\");\nvar companySelect = document.querySelector(\".header__selectCompany\");\nfeaturesBtn.innerHTML += \"\\n        <ul class=\\\"header__menuDropdownFeatures\\\">\\n                  <li><a href=\\\"#\\\"><img src=\\\"../../imgs/icon-todo.svg\\\"/> Todo List</a></li>\\n                  <li><a href=\\\"#\\\"><img src=\\\"../../imgs/icon-calendar.svg\\\"/> Calendar</a></li>\\n                  <li><a href=\\\"#\\\"><img src=\\\"../../imgs/icon-reminders.svg\\\"/> Reminders</a></li>\\n                  <li><a href=\\\"#\\\"><img src=\\\"/imgs/icon-planning.svg\\\"/> Planning</a></li>\\n                </ul>\\n        \";\nvar companyOptions = [{\n  value: \"company1\",\n  label: \"History\"\n}, {\n  value: \"company2\",\n  label: \"Our Team\"\n}, {\n  value: \"company3\",\n  label: \"Blog\"\n}];\ncompanyOptions.forEach(function (option) {\n  var newOptionCompany = document.createElement(\"option\");\n  newOptionCompany.value = option.value;\n  newOptionCompany.textContent = option.label;\n  companySelect.appendChild(newOptionCompany);\n});\n\n//# sourceURL=webpack://babel/./src/app/print.js?");
+
+/***/ }),
+
+/***/ "./src/app/script.js":
+/*!***************************!*\
+  !*** ./src/app/script.js ***!
+  \***************************/
+/***/ (() => {
+
+eval("var abrirMenu = document.querySelector('.header__abrir-menu');\nvar cerrarMenu = document.querySelector('.header__cerrar-menu');\nvar ulList = document.querySelector('.header__nav-list');\nvar loginBtns = document.querySelector('.header__login');\ncerrarMenu.addEventListener('click', function () {\n  ulList.style.setProperty('visibility', 'hidden');\n  cerrarMenu.style.setProperty('visibility', 'hidden');\n  loginBtns.style.setProperty('visibility', 'hidden');\n  abrirMenu.style.setProperty('visibility', 'visible');\n});\nabrirMenu.addEventListener('click', function () {\n  ulList.style.setProperty('visibility', 'visible');\n  cerrarMenu.style.setProperty('visibility', 'visible');\n  loginBtns.style.setProperty('visibility', 'visible');\n  abrirMenu.style.setProperty('visibility', 'hidden');\n});\n\n//# sourceURL=webpack://babel/./src/app/script.js?");
 
 /***/ }),
 
@@ -3198,7 +3218,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./app/styles/style.css */ \"./src/app/styles/style.css?0d35\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/logo.svg */ \"./src/imgs/logo.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/client-databiz.svg */ \"./src/imgs/client-databiz.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/client-audiophile.svg */ \"./src/imgs/client-audiophile.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/client-meet.svg */ \"./src/imgs/client-meet.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/client-maker.svg */ \"./src/imgs/client-maker.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./imgs/image-hero-desktop.png */ \"./src/imgs/image-hero-desktop.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);\nvar ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);\nvar ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);\nvar ___HTML_LOADER_REPLACEMENT_5___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_5___);\nvar ___HTML_LOADER_REPLACEMENT_6___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_6___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n  <head>\\r\\n    <meta charset=\\\"UTF-8\\\" />\\r\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\" />\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\r\\n    <link rel=\\\"stylesheet\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\">\\r\\n    <title>Snap</title>\\r\\n  </head>\\r\\n  <body>\\r\\n    <header class=\\\"header\\\">\\r\\n      <nav class=\\\"header__nav\\\">\\r\\n        <div class=\\\"header__logo\\\">\\r\\n          <figure>\\r\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\" alt=\\\"Snap\\\" />\\r\\n          </figure>\\r\\n          <ul>\\r\\n            <li>\\r\\n              <select name=\\\"Features\\\" id=\\\"\\\">\\r\\n                <option value=\\\"\\\" hidden=\\\"false\\\">Features</option>\\r\\n              </select>\\r\\n            </li>\\r\\n            <li>\\r\\n              <select name=\\\"Company\\\" id=\\\"\\\">\\r\\n                <option value=\\\"\\\" hidden=\\\"false\\\">Company</option>\\r\\n              </select>\\r\\n            </li>\\r\\n            <li>Carrers</li>\\r\\n            <li>About</li>\\r\\n          </ul>\\r\\n        </div>\\r\\n        <div class=\\\"header__login\\\">\\r\\n          <button type=\\\"button\\\" class=\\\"header__btnLogin\\\">Login</button>\\r\\n          <button type=\\\"button\\\" class=\\\"header__btnRegister\\\">Register</button>\\r\\n        </div>\\r\\n      </nav>\\r\\n    </header>\\r\\n    <main class=\\\"main\\\">\\r\\n      <section class=\\\"main__about\\\">\\r\\n        <h1 class=\\\"main___title\\\"> Make <span> remote work</span></h1>\\r\\n        <div class=\\\"main__text\\\">\\r\\n          <p>Get your team in sync, no matter your location.</p>\\r\\n          <p>\\r\\n            Streamline processes, create team rituals, and watch productivity\\r\\n            soar.\\r\\n          </p>\\r\\n        </div>\\r\\n        <button class=\\\"main__btn\\\">Learn more</button>\\r\\n        <div class=\\\"main__companies\\\">\\r\\n          <nav>\\r\\n            <ul>\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_2___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_3___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_4___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_5___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n            </ul>\\r\\n          </nav>\\r\\n        </div>\\r\\n      </section>\\r\\n      <section class=\\\"main__person\\\">\\r\\n        <figure class=\\\"main__img\\\">\\r\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_6___ + \"\\\" alt=\\\"\\\" />\\r\\n          <img\\r\\n            src=\\\"\" + ___HTML_LOADER_REPLACEMENT_6___ + \"\\\"\\r\\n            alt=\\\"\\\"\\r\\n            hidden=\\\"false\\\"\\r\\n          />\\r\\n        </figure>\\r\\n      </section>\\r\\n    </main>\\r\\n    <footer class=\\\"footer\\\"></footer>\\r\\n  </body>\\r\\n</html>\\r\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://babel/./src/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./app/styles/style.css */ \"./src/app/styles/style.css?0d35\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/favicon-32x32.png */ \"./imgs/favicon-32x32.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/logo.svg */ \"./imgs/logo.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/icon-arrow-down.svg */ \"./imgs/icon-arrow-down.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../imgs/client-databiz.svg */ \"./imgs/client-databiz.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/client-audiophile.svg */ \"./imgs/client-audiophile.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/client-meet.svg */ \"./imgs/client-meet.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/client-maker.svg */ \"./imgs/client-maker.svg\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/image-hero-desktop.png */ \"./imgs/image-hero-desktop.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ../imgs/image-hero-mobile.png */ \"./imgs/image-hero-mobile.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);\nvar ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);\nvar ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);\nvar ___HTML_LOADER_REPLACEMENT_5___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_5___);\nvar ___HTML_LOADER_REPLACEMENT_6___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_6___);\nvar ___HTML_LOADER_REPLACEMENT_7___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_7___);\nvar ___HTML_LOADER_REPLACEMENT_8___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_8___);\nvar ___HTML_LOADER_REPLACEMENT_9___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_9___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n  <head>\\r\\n    <meta charset=\\\"UTF-8\\\" />\\r\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\" />\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\r\\n    <link rel=\\\"stylesheet\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\">\\r\\n    <link rel=\\\"icon\\\" type=\\\"image/x-icon\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\">\\r\\n    <link rel=\\\"stylesheet\\\" href=\\\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0\\\" />\\r\\n\\r\\n    <title>Snap</title>\\r\\n  </head>\\r\\n  <body>\\r\\n    <header class=\\\"header\\\">\\r\\n      <nav class=\\\"header__nav\\\">\\r\\n        <button class=\\\"header__abrir-menu\\\"><span class=\\\"material-symbols-outlined\\\">\\r\\n          menu\\r\\n          </span></button>\\r\\n        <div class=\\\"header__logo\\\">\\r\\n          <figure>\\r\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_2___ + \"\\\" alt=\\\"Snap\\\" />\\r\\n          </figure>\\r\\n          <button class=\\\"header__cerrar-menu \\\"><span class=\\\"material-symbols-outlined\\\">\\r\\n            close\\r\\n            </span></button>\\r\\n          <ul class=\\\"header__nav-list  \\\">\\r\\n            <li>\\r\\n              <div class=\\\"header__containerFeatures\\\">\\r\\n                <button class=\\\"header__buttonFeatures\\\">Features <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_3___ + \"\\\" alt=\\\"\\\"></button>\\r\\n              </div>\\r\\n            </li>\\r\\n            <li>\\r\\n              <select name=\\\"Company\\\" id=\\\"\\\" class=\\\"header__selectCompany\\\">\\r\\n                <option value=\\\"\\\" hidden=\\\"false\\\">Company</option>\\r\\n              </select>\\r\\n            </li>\\r\\n            <li>Carrers</li>\\r\\n            <li>About</li>\\r\\n          </ul>\\r\\n        </div>\\r\\n        <div class=\\\"header__login\\\">\\r\\n          \\r\\n          <button type=\\\"button\\\" class=\\\"header__btnLogin\\\">Login</button>\\r\\n          <button type=\\\"button\\\" class=\\\"header__btnRegister\\\">Register</button>\\r\\n        </div>\\r\\n      </nav>\\r\\n    </header>\\r\\n    <main class=\\\"main\\\">\\r\\n      <section class=\\\"main__about\\\">\\r\\n        <h1 class=\\\"main___title\\\"> Make <span> remote work</span></h1>\\r\\n        <div class=\\\"main__text\\\">\\r\\n          <p>Get your team in sync, no matter your location.</p>\\r\\n          <p>\\r\\n            Streamline processes, create team rituals, and watch productivity\\r\\n            soar.\\r\\n          </p>\\r\\n        </div>\\r\\n        <button class=\\\"main__btn\\\">Learn more</button>\\r\\n        <div class=\\\"main__companies\\\">\\r\\n          <nav>\\r\\n            <ul>\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_4___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_5___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_6___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n\\r\\n              <li>\\r\\n                <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_7___ + \"\\\" alt=\\\"\\\"  />\\r\\n              </li>\\r\\n            </ul>\\r\\n          </nav>\\r\\n        </div>\\r\\n      </section>\\r\\n      <section class=\\\"main__person\\\">\\r\\n        <figure class=\\\"main__img\\\">\\r\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_8___ + \"\\\" alt=\\\"\\\" />\\r\\n          <img\\r\\n            src=\\\"\" + ___HTML_LOADER_REPLACEMENT_8___ + \"\\\"\\r\\n            alt=\\\"\\\"\\r\\n            hidden=\\\"false\\\"\\r\\n          />\\r\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_8___ + \"\\\" alt=\\\"\\\" class=\\\"main__img-desktop\\\" />\\r\\n          <img\\r\\n            src=\\\"\" + ___HTML_LOADER_REPLACEMENT_9___ + \"\\\"\\r\\n            alt=\\\"\\\" class='main__img-mobile'/>\\r\\n        </figure>\\r\\n      </section>\\r\\n    </main>\\r\\n    <footer class=\\\"footer\\\"></footer>\\r\\n  </body>\\r\\n</html>\\r\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://babel/./src/index.html?");
 
 /***/ }),
 
@@ -3213,6 +3233,105 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./imgs/client-audiophile.svg":
+/*!************************************!*\
+  !*** ./imgs/client-audiophile.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"8c670cdffe9fb124c848.svg\";\n\n//# sourceURL=webpack://babel/./imgs/client-audiophile.svg?");
+
+/***/ }),
+
+/***/ "./imgs/client-databiz.svg":
+/*!*********************************!*\
+  !*** ./imgs/client-databiz.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"d1e7955f847e089183ca.svg\";\n\n//# sourceURL=webpack://babel/./imgs/client-databiz.svg?");
+
+/***/ }),
+
+/***/ "./imgs/client-maker.svg":
+/*!*******************************!*\
+  !*** ./imgs/client-maker.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"3859368b1ba7e579d814.svg\";\n\n//# sourceURL=webpack://babel/./imgs/client-maker.svg?");
+
+/***/ }),
+
+/***/ "./imgs/client-meet.svg":
+/*!******************************!*\
+  !*** ./imgs/client-meet.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"2d6ffbad4108ea24377c.svg\";\n\n//# sourceURL=webpack://babel/./imgs/client-meet.svg?");
+
+/***/ }),
+
+/***/ "./imgs/favicon-32x32.png":
+/*!********************************!*\
+  !*** ./imgs/favicon-32x32.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"736eae1ff09acfe04c50.png\";\n\n//# sourceURL=webpack://babel/./imgs/favicon-32x32.png?");
+
+/***/ }),
+
+/***/ "./imgs/icon-arrow-down.svg":
+/*!**********************************!*\
+  !*** ./imgs/icon-arrow-down.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"bebf05132571af33611e.svg\";\n\n//# sourceURL=webpack://babel/./imgs/icon-arrow-down.svg?");
+
+/***/ }),
+
+/***/ "./imgs/image-hero-desktop.png":
+/*!*************************************!*\
+  !*** ./imgs/image-hero-desktop.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"50cc22fddeb0c072b414.png\";\n\n//# sourceURL=webpack://babel/./imgs/image-hero-desktop.png?");
+
+/***/ }),
+
+/***/ "./imgs/image-hero-mobile.png":
+/*!************************************!*\
+  !*** ./imgs/image-hero-mobile.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"adefc8b1bbed2ca80470.png\";\n\n//# sourceURL=webpack://babel/./imgs/image-hero-mobile.png?");
+
+/***/ }),
+
+/***/ "./imgs/logo.svg":
+/*!***********************!*\
+  !*** ./imgs/logo.svg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"1c174ccea84ec59ff880.svg\";\n\n//# sourceURL=webpack://babel/./imgs/logo.svg?");
+
+/***/ }),
+
 /***/ "./src/app/styles/style.css?0d35":
 /*!**********************************!*\
   !*** ./src/app/styles/style.css ***!
@@ -3221,72 +3340,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"b88d04fba731603756b1.css\";\n\n//# sourceURL=webpack://babel/./src/app/styles/style.css?");
-
-/***/ }),
-
-/***/ "./src/imgs/client-audiophile.svg":
-/*!****************************************!*\
-  !*** ./src/imgs/client-audiophile.svg ***!
-  \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"8c670cdffe9fb124c848.svg\";\n\n//# sourceURL=webpack://babel/./src/imgs/client-audiophile.svg?");
-
-/***/ }),
-
-/***/ "./src/imgs/client-databiz.svg":
-/*!*************************************!*\
-  !*** ./src/imgs/client-databiz.svg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"d1e7955f847e089183ca.svg\";\n\n//# sourceURL=webpack://babel/./src/imgs/client-databiz.svg?");
-
-/***/ }),
-
-/***/ "./src/imgs/client-maker.svg":
-/*!***********************************!*\
-  !*** ./src/imgs/client-maker.svg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"3859368b1ba7e579d814.svg\";\n\n//# sourceURL=webpack://babel/./src/imgs/client-maker.svg?");
-
-/***/ }),
-
-/***/ "./src/imgs/client-meet.svg":
-/*!**********************************!*\
-  !*** ./src/imgs/client-meet.svg ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"2d6ffbad4108ea24377c.svg\";\n\n//# sourceURL=webpack://babel/./src/imgs/client-meet.svg?");
-
-/***/ }),
-
-/***/ "./src/imgs/image-hero-desktop.png":
-/*!*****************************************!*\
-  !*** ./src/imgs/image-hero-desktop.png ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"50cc22fddeb0c072b414.png\";\n\n//# sourceURL=webpack://babel/./src/imgs/image-hero-desktop.png?");
-
-/***/ }),
-
-/***/ "./src/imgs/logo.svg":
-/*!***************************!*\
-  !*** ./src/imgs/logo.svg ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"1c174ccea84ec59ff880.svg\";\n\n//# sourceURL=webpack://babel/./src/imgs/logo.svg?");
 
 /***/ })
 
