@@ -27,7 +27,25 @@ module : {
         {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        }
+        },
+        {
+            test: /\.html$/,
+            use: ['html-loader'],
+          },
+        //   {
+        //     test: /\.(png|jpe?g|gif|svg)$/i,
+        //     use: [
+        //       {
+        //         loader: 'file-loader',
+        //         options: {
+        //           name: '[name].[ext]',
+        //           outputPath: 'imgs/',
+        //           publicPath: 'imgs/'
+        //         }
+        //       }
+        //     ]
+        //   }
+        
     ]
 },
 plugins: [
