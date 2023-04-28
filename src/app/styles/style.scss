@@ -130,6 +130,7 @@
         font-size: $font-size-nav;
         &:hover{
             color: $color-black;
+            cursor: pointer;
         }
     }
     &__buttonCompany{
@@ -140,6 +141,7 @@
         font-size: $font-size-nav;
         &:hover{
             color: $color-black;
+            cursor: pointer;
         }
     }
     &__test{
@@ -197,6 +199,9 @@
     &__login{
         display: flex;
         gap: 40px;
+        &:hover{
+            cursor: pointer;
+        }
 
         @include mobile {
             display: flex;
@@ -223,6 +228,7 @@
       
         &:hover{
             color:$color-black;
+            cursor: pointer;
         }
         @include mobile {
             font-size: 14px;
@@ -241,6 +247,7 @@
         &:hover{
             color:$color-black;
             border: 2px solid $color-black;
+            cursor: pointer;
         }
         @include mobile {
             font-size: 14px;
@@ -273,6 +280,10 @@
             text-decoration: none;
             color: $color-gray;
             font-size: 16px;
+            &:hover{
+                cursor: pointer;
+                color: $color-black;
+            }
             
         }
         li{
@@ -309,6 +320,10 @@
             text-decoration: none;
             color: $color-gray;
             font-size: 16px;   
+            &:hover{
+                cursor: pointer;
+                color: $color-black;
+            }
         }
         li{
             margin:20px 10px;
@@ -417,8 +432,9 @@
     font-size: $font-size-nav;
     width: 27%;
     &:hover{
-        color:$color-black;
+    color:$color-black;
     background-color: $color-white;
+    cursor: pointer;
     }
     @include mobile {
         width: 50vw;   

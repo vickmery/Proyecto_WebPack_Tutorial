@@ -113,6 +113,7 @@
 }
 .header__buttonFeatures:hover {
   color: hsl(0, 0%, 8%);
+  cursor: pointer;
 }
 .header__buttonCompany {
   border: none;
@@ -123,6 +124,7 @@
 }
 .header__buttonCompany:hover {
   color: hsl(0, 0%, 8%);
+  cursor: pointer;
 }
 .header__test {
   visibility: hidden;
@@ -167,6 +169,9 @@
   display: flex;
   gap: 40px;
 }
+.header__login:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 375px) {
   .header__login {
     display: flex;
@@ -192,6 +197,7 @@
 }
 .header__btnLogin:hover {
   color: hsl(0, 0%, 8%);
+  cursor: pointer;
 }
 @media screen and (max-width: 375px) {
   .header__btnLogin {
@@ -210,6 +216,7 @@
 .header__btnRegister:hover {
   color: hsl(0, 0%, 8%);
   border: 2px solid hsl(0, 0%, 8%);
+  cursor: pointer;
 }
 @media screen and (max-width: 375px) {
   .header__btnRegister {
@@ -244,6 +251,10 @@
   text-decoration: none;
   color: hsl(0, 0%, 41%);
   font-size: 16px;
+}
+.icon__list a:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
 }
 .icon__list li {
   margin-top: 20px;
@@ -281,6 +292,10 @@
   text-decoration: none;
   color: hsl(0, 0%, 41%);
   font-size: 16px;
+}
+.link__list a:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
 }
 .link__list li {
   margin: 20px 10px;
@@ -386,6 +401,7 @@
 .main__btn:hover {
   color: hsl(0, 0%, 8%);
   background-color: hsl(0, 0%, 98%);
+  cursor: pointer;
 }
 @media screen and (max-width: 375px) {
   .main__btn {
