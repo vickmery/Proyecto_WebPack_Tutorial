@@ -9,7 +9,13 @@
 
 .header {
 
-
+&__nav-list{
+    visibility: visible;
+    @include desktop{
+        visibility: visible;
+        
+    }
+}
 
     &__nav{
         display: flex;
@@ -70,6 +76,7 @@
             
             
          }
+
     
     &__logo{
      display: flex;
@@ -81,7 +88,6 @@
          display: flex;
          list-style:none;
          gap: 40px;
-         
          
          @include mobile {
              flex-direction: column;
@@ -99,6 +105,8 @@
              
                  
          }
+         
+         
      }
      
      select{
@@ -120,10 +128,31 @@
         font-family: $font;
         color: $color-gray;
         font-size: $font-size-nav;
+        &:hover{
+            color: $color-black;
+        }
+    }
+    &__buttonCompany{
+        border: none;
+        background-color: transparent;
+        font-family: $font;
+        color: $color-gray;
+        font-size: $font-size-nav;
+        &:hover{
+            color: $color-black;
+        }
+    }
+    &__test{
+        visibility: hidden;
+        position: absolute;
+    }
+    &__test2{
+        visibility: hidden;
+        position: absolute;
     }
 
     &__menuDropdownFeatures{
-        position: absolute;
+        position: relative;
         display: none;
         background-color: $color-white;
         border: 1px solid #ccc;
@@ -147,6 +176,18 @@
             text-decoration: none;
             color: $color-gray;
         }
+      
+    
+        @include mobile {
+            
+            
+            background-color: $color-white;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            width: 120px;
+            visibility: visible;
+    
+        }
     }
 
     &__containerFeatures:hover &__menuDropdownFeatures{
@@ -163,7 +204,7 @@
             position: absolute;
             top: 80vw;
             right: 0px;
-            bottom: 0px;
+            bottom:0px;
             padding: 0px 1.5rem;
             align-items: end;
             z-index: 1;
@@ -208,6 +249,73 @@
       
     }
 } 
+
+    .icon__list{
+    position: fixed;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 70px;
+    left: 180px;
+    @include mobile {
+    position: unset;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow:none;
+    top: 0px;
+    left: 0px;
+    }
+        a{
+            text-decoration: none;
+            color: $color-gray;
+            font-size: 16px;
+            
+        }
+        li{
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        img{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    .link__list{
+        position: fixed;
+        background: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        width: 150px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        top: 70px;
+        left: 380px;
+        @include mobile {
+            position: unset;
+            background: transparent;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: 150px;
+            box-shadow: transparent;
+            top: 0px;
+            left: 0px;
+            box-shadow:none;
+            }
+        a{
+            text-decoration: none;
+            color: $color-gray;
+            font-size: 16px;   
+        }
+        li{
+            margin:20px 10px;
+
+        }
+    }
+
     .main{ 
     display:flex;
     align-items: flex-end;
