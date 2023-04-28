@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./app/styles/style.css">
+<<<<<<< Updated upstream
     <link rel="icon" type="image/x-icon" href="../imgs/favicon-32x32.png">
+=======
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+>>>>>>> Stashed changes
     <title>Snap</title>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
+        <button class="header__abrir-menu"><span class="material-symbols-outlined">
+          menu
+          </span></button>
         <div class="header__logo">
           <figure>
             <img src="/imgs/logo.svg" alt="Snap" />
           </figure>
-          <ul>
+          <button class="header__cerrar-menu "><span class="material-symbols-outlined">
+            close
+            </span></button>
+          <ul class="header__nav-list  ">
             <li>
               <div class="header__containerFeatures">
                 <button class="header__buttonFeatures">Features <img src="../imgs/icon-arrow-down.svg" alt=""></button>
@@ -31,6 +42,7 @@
           </ul>
         </div>
         <div class="header__login">
+          
           <button type="button" class="header__btnLogin">Login</button>
           <button type="button" class="header__btnRegister">Register</button>
         </div>
@@ -71,12 +83,19 @@
       </section>
       <section class="main__person">
         <figure class="main__img">
+<<<<<<< Updated upstream
           <img src="/imgs/image-hero-desktop.png" alt="" />
           <img
             src="/imgs/image-hero-desktop.png"
             alt=""
             hidden="false"
           />
+=======
+          <img src="./imgs/image-hero-desktop.png" alt="" class="main__img-desktop" />
+          <img
+            src="./imgs/image-hero-mobile.png"
+            alt="" class='main__img-mobile'/>
+>>>>>>> Stashed changes
         </figure>
       </section>
     </main>

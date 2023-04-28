@@ -1,8 +1,16 @@
+
+@import 'media-queries.scss';
 @import 'fonts.scss';
 @import 'universals.scss';
 @import 'variables.scss';
 
+
+
+
 .header {
+
+
+
     &__nav{
         display: flex;
         flex-direction: row;
@@ -14,6 +22,12 @@
         color: $color-gray;
         font-size: $font-size-nav;
         
+
+        @include mobile {
+            display:flex;
+            justify-content: flex-start;
+        }
+        
        li{
         &:hover{
             color:$color-black;
@@ -21,16 +35,72 @@
        }
         
     }
+
+    &__hidde{
+        overflow: hidde;
+    }
+
+    &__ham{
+        display: none;
+        @include mobile {
+            display: block;
+            position: relative;
+                     
+        }
+    }
+        &__abrir-menu{
+            position: relative;
+            left: 261px;
+            z-index: 1;
+            background-color: transparent;
+            border: 0px;
+            visibility: hidden;
+            
+            @include mobile{
+                visibility: visible;
+            }
+         }
+         &__cerrar-menu{
+            position: relative;
+            left: 100px;
+            z-index: 3;
+            background-color: transparent;
+            border: 0px;
+            visibility: hidden;
+            
+            
+         }
     
     &__logo{
      display: flex;
      gap: 50px;
      align-items: center;
+     width: 100vw;
+     
      ul{
-        display: flex;
-        list-style:none;
-        gap: 40px;
+         display: flex;
+         list-style:none;
+         gap: 40px;
+         
+         
+         @include mobile {
+             flex-direction: column;
+             position: absolute;
+             top: 0px;
+             right: 0px;
+             bottom: 0px;
+             padding: 3rem 1.5rem;
+             background-color: white;
+             align-items: flex-start;
+             box-shadow: 0 0 0 100vmax rgba(0,0, 0, .5);
+             width: 60vw;
+             gap: 35px;
+             visibility: hidden;
+             
+                 
+         }
      }
+     
      select{
         border: none;
         background-color: transparent;
@@ -86,6 +156,21 @@
     &__login{
         display: flex;
         gap: 40px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 80vw;
+            right: 0px;
+            bottom: 0px;
+            padding: 0px 1.5rem;
+            align-items: end;
+            z-index: 1;
+            align-items: center;
+            gap: 20px;
+            visibility: hidden;
+        }
     }
 
     &__btnLogin{
@@ -94,9 +179,13 @@
         font-family: $font;
         color: $color-gray;
         font-size: $font-size-nav;
-
+      
         &:hover{
-            color:$color-black;}
+            color:$color-black;
+        }
+        @include mobile {
+            font-size: 14px;
+        }
     }
 
     &__btnRegister{
@@ -112,25 +201,51 @@
             color:$color-black;
             border: 2px solid $color-black;
         }
+        @include mobile {
+            font-size: 14px;
+            width: 46.9vw;
+        }
+      
     }
 } 
     .main{ 
     display:flex;
-    padding: 40px 100px 40px 100px ;
     align-items: flex-end;
     align-content: center;
     justify-content: center;
+    @include mobile {
+        flex-direction: column-reverse;
+        
+    }
     
     &__about {
         display:flex;
         flex-direction: column;
         gap: 20px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            
+        }
         
         h1 {
             font-family: $font;
             font-weight: 800px;
             font-size: 64px;
             margin-bottom: 30px;
+            @include mobile {
+                font-size: 32px;
+                display: flex;
+                width: 100vw;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                gap: 8px;
+                
+                
+            }
             } 
             
             span  {
@@ -143,7 +258,32 @@
         width: 450px;
         height: auto;    
         }
+        @include mobile {
+            width: 100vw !important;
+            height: auto;
+            img{
+                width: 100vw;
+            }
+            
+        }
      }
+
+     &__img-mobile{
+        display: none;
+        @include mobile {
+         display: block;
+        
+        }
+     }
+
+     &__img-desktop{
+        display: block;
+        @include mobile {
+            display: none;
+            
+        }
+     }
+
      &__text {
         width: 79%;
         font-family: $font;
@@ -151,6 +291,13 @@
         color:$color-gray;
         line-height: 25px;
         margin-bottom: 30px;
+        @include mobile {
+            text-align:center;
+            width: 100vw;
+
+            
+        }
+        
    }
    &__btn{
     border: 2px solid $color-black;
@@ -165,20 +312,37 @@
         color:$color-black;
     background-color: $color-white;
     }
+    @include mobile {
+        width: 50vw;   
+    }
 }
 &__companies {
 
 ul{
-        display: flex;
-        list-style: none;
-        gap: 30px;
-        align-content: center;
-        align-items: center;
-        margin-top: 13.3%;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-content: center;
+    align-items: center;
+    margin-top: 13.3%;
+    @include mobile {
+       width: 100vw;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 20px;
+            
+     }
+
         img {
-            width: 80px;
-            height: auto;
+         width: 80px;
+         height: auto;
+            @include mobile {
+            text-align:left;
+            width: 42px
+                
+            }
         }
+
     }
 
 }
